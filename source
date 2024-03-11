@@ -26361,14 +26361,16 @@ document.body.appendChild(wbr);</code></pre>
   elements. This keyword creates an <span data-x="internal resource link">internal resource
   link</span>.</p>
 
-  <p>The <code data-x="rel-expect">expect</code> keyword indicates that an element with a certain
-  <span data-x="concept-id">ID</span> is expected in this document, and the link might
-  <span>block rendering</span> until that element's closing tag is parsed.</p>
+  <p>An <span>internal resource link</span> created by the <code data-x="rel-expect">expect</code>
+  keyword can be used to <span data-x="render-blocked">block rendering</span> until the element that
+  it <span data-x="indicated part">indicates</span> is connected to the document and fully
+  parsed.</p>
 
   <p>There is no default type for resources given by the <code data-x="rel-expect">expect</code>
   keyword.</p>
 
-  <p>Whenever the following conditions occur for a <code>link</code> element <var>el</var>:</p>
+  <p>Whenever any of the following conditions occur for a <code>link</code> element
+  <var>el</var>:</p>
 
   <ul>
    <li><p>the <code data-x="rel-expect">expect</code> <span>internal resource link</span> is created
